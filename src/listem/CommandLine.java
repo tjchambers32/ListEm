@@ -9,11 +9,11 @@ import java.util.regex.*;
 
 public abstract class CommandLine {
 
-	Map<File, List<String>> result;
-	Map<File, Integer> lineCount;
+	protected Map<File, List<String>> result;
+	protected Map<File, Integer> lineCount;
 	Pattern pattern;
-	Pattern subPattern;
-	List<String> list;
+	protected Pattern subPattern;
+	protected List<String> list;
 		
 	public void process(File directory, String fileSelectionPattern, boolean recursive) {
 		
